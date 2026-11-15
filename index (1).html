@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday, My Love 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg"></canvas><canvas id="fx"></canvas>
+<button id="mus" aria-label="Toggle music">🎵</button>
+<div id="lb"><img alt=""></div>
+
+<div id="gate">
+  <button class="gift" id="open" aria-label="Open your gift">🎁</button>
+  <h2 style="margin:0">Something is waiting for you…</h2>
+  <p class="sub" style="margin:0">Tap the gift to open it 💝 (turn your sound on)</p>
+</div>
+
+<section id="hero">
+  <h1 id="title">Happy Birthday</h1>
+  <h2 id="nm" style="font-size:clamp(2.5rem,8vw,5rem);color:var(--cream)">My Love</h2>
+  <p id="msg"></p>
+  <div id="counter"></div>
+  <p class="hint">scroll down — there is a lot to play with ↓</p>
+</section>
+
+<section>
+  <h2>Our little gallery 📸</h2>
+  <p class="sub">Tap any memory to see it big. (Tilt them with your mouse!)</p>
+  <div class="grid" id="gal"></div>
+</section>
+
+<section>
+  <h2>Make a wish 🎂</h2>
+  <p class="sub">Tap each flame (or the button) to blow out your candles, and close your eyes first.</p>
+  <div class="cake"><div class="candles" id="candles"></div><div class="tier t3"></div><div class="tier t2"></div><div class="tier t1"></div></div>
+  <button id="blow">Blow 💨</button> <button id="mic" style="background:var(--lilac)">🎤 Blow for real</button>
+  <p id="wish" class="hint"></p>
+</section>
+
+<section>
+  <h2>Reasons I love you 💌</h2>
+  <p class="sub">Flip every card. There are more reasons than cards.</p>
+  <div class="cards" id="reasons"></div>
+</section>
+
+<section>
+  <h2>Catch my heart 💘</h2>
+  <p class="sub">Catch as many falling hearts as you can in 20 seconds.</p>
+  <div id="game"></div>
+  <p style="margin:14px">Score: <b id="sc">0</b> &nbsp; Time: <b id="tm">20</b></p>
+  <button id="start">Start game</button>
+</section>
+
+<section>
+  <h2>Open when… ✉️</h2>
+  <p class="sub">Little letters for every mood. Tap to open.</p>
+  <div id="letters" style="width:100%"></div>
+</section>
+
+<section>
+  <h2>Our sky ✨</h2>
+  <p class="sub">Tap the night sky to place a star. Every star is a promise.</p>
+  <div id="sky"></div>
+  <p class="hint">Stars placed: <b id="sn">0</b></p>
+</section>
+
+<section>
+  <h2>My heart is yours 💗</h2>
+  <p class="sub">Move your finger or mouse through it. It scatters, then always finds its way back. Tap to make it burst.</p>
+  <canvas id="heartc"></canvas>
+</section>
+
+<section>
+  <h2>Our story 🗺️</h2>
+  <p class="sub">The moments that made us.</p>
+  <div class="tl" id="story"></div>
+</section>
+
+
+
+<section id="end">
+  <h2 style="font-size:clamp(2.5rem,8vw,5rem)">One last question…</h2>
+  <p class="sub" style="font-size:1.3rem">Will you be my favorite person for every birthday to come?</p>
+  <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap;justify-content:center;min-height:80px">
+    <button id="yes">Yes 💖</button>
+    <button id="no" style="background:#555;box-shadow:none;position:relative">No</button>
+  </div>
+  <p id="fin" style="font-family:'Caveat';font-size:2rem;margin-top:24px"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
